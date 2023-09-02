@@ -1,17 +1,19 @@
 
 // Chapter 10. 배열 
 
-#include "head.c"
+#include "head.h"
 
 void Q8(void);
 void Q9(void);
 void Q10(void);
+void Q11(void);
 
 int main(void) {
-	Q8();
-	Q9();
-	Q10();
-	
+	//Q8();
+	//Q9();
+	//Q10();
+	Q11();
+
 	return 0;
 }
 
@@ -59,7 +61,7 @@ void Q9(void) {
 	average = get_average(numbers, 10);
 	printf("평균값은 %lf\n", average);
 
-	std_dev = get_dev(numbers, 10, average);
+	std_dev = get_stddev(numbers, 10, average);
 	printf("표준편차값은 %lf\n", std_dev);
 
 
@@ -69,20 +71,20 @@ void Q9(void) {
 /* Q10. 5명의 학생, 3번의 시험. 시험 점수는 난수로 배정, 각 시험에 대한 최저,최고 점수 출력 */
 void Q10(void) {
 	int score[5][3] = { 0 };
-	
+
 	srand((unsigned)time(NULL));
-	
+
 	for (int i = 0; i < 5; i++) {
 		for (int j = 0; j < 3; j++) {
 			score[i][j] = rand() % 100 + 1;
 		}
 	}
 
-	int highest,lowest;
+	int highest, lowest;
 
 	highest = score[0][0];
 	lowest = score[0][0];
-	for (int a = 0; a < 3; a++) // n번째 시험
+	for (int a = 0; a < 3; a++)
 	{
 		for (int b = 0; b < 5; b++) {
 			if (highest < score[b][a])
@@ -92,4 +94,19 @@ void Q10(void) {
 		}
 		printf("\n%d번째 시험\n  최대 : %d\n  최소 : %d\n", a + 1, highest, lowest);
 	}
+}
+
+/* Q11. 벡터의 연산 */
+void Q11(void) {
+	double A[3] = { 1.00,2.01,3.00 };
+	double B[3] = { 3.00,6.01,4.00 };
+	double C[3] = { 0 };
+
+	add_vector(A, B, C, 3);
+	printf("두 벡터의 합 : ");
+	for (int i = 0; i < 3; i++){printf("%.3lf  ", C[i]);}
+	printf("\n");
+
+	double product = dot_prod_vector(A, B, 3);
+	printf("두 벡터의 내적 : %.3lf", product);
 }
