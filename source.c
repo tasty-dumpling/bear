@@ -80,10 +80,9 @@ void Q10(void) {
 
 	int highest,lowest;
 
-	// 1번째 시험
 	highest = score[0][0];
 	lowest = score[0][0];
-	for (int a = 0; a < 3; a++)
+	for (int a = 0; a < 3; a++) // n번째 시험
 	{
 		for (int b = 0; b < 5; b++) {
 			if (highest < score[b][a])
