@@ -1,0 +1,107 @@
+
+#include "project0326.h"
+
+int main(void) {
+//	CHAP2_Q1();
+//	CHAP2_Q2();
+//	CHAP2_Q3();
+//	CHAP2_Q4();
+//	CHAP2_Q5();
+//	make_moon_with_lego();
+//	CHAP3_Q1();
+
+	return 0;
+}
+
+int get_integer(char a[]) {
+	int integer = 0;
+	printf("%s 입력하세요.: ", a);
+	scanf_s("%d", &integer);
+	return integer;
+}
+double get_floating(char a[]) {
+	double floating = 0;
+	printf("%s 입력하세요: ", a);
+	scanf_s("%lf", &floating);
+	return floating;
+}
+
+void CHAP2_Q1(void) {
+	int LINE = 6;
+	for (int i = 0; i < LINE; i++) {
+		printf("#");
+		if (i == 3) { for (int j = 0; j < 5; j++) printf("#"); }
+		else { for (int j = 0; j < 5; j++) printf(" "); }
+		printf("#");
+		printf("\n");
+	}
+	printf("\n");
+}
+
+void CHAP2_Q2(void) {
+	int price, multi;
+	char a[] = "상품가격을";
+	char b[] = "개수를";
+	price = get_integer(a);
+	multi = get_integer(b);
+	printf("총 가격은 %d 원입니다.", price*multi);
+	printf("\n");
+}
+
+void CHAP2_Q3(void) {
+	int age;
+	char a[] = "나이를";
+	age = get_integer(a);
+	printf("내년이면 %d 살이 되시는군요.", age + 1);
+	printf("\n");
+}
+
+void CHAP2_Q4(void) {
+	double sum = 0.0;
+	char a[] = "정수를";
+	for (int i = 0; i < 3; i++) {
+		int integer = 0;
+		integer = get_integer(a);
+		sum = sum + integer;
+	}
+	printf("평균은 %lf 입니다.", sum / 3.0);
+	printf("\n");
+}
+
+void CHAP2_Q5(void) {
+	int x, y, z;
+	char a[] = "정수를";
+	x = get_integer(a);
+	y = get_integer(a);
+	z = get_integer(a);
+	printf("첫번째와 두번째 정수를 합한 후 세번째 정수로 나눈 결과: %d", (x + y) / z);
+	printf("\n");
+}
+
+void make_moon_with_lego(void) {
+	// lego size: W 31.8mm L 15.8mm H 9.6mm
+	// moon radius: 1,737km
+	double moon_volume, lego_volume, blocks_you_need;
+	int moon_radius = 1737;
+	moon_volume = 4.0 * PI * moon_radius / 3.0;
+	lego_volume = 31.8 * 15.8 * 9.6;
+	printf("달의 크기:     %.2lf 세제곱 키로미터\n",moon_volume);
+	printf("레고의 크기 : % .2lf 세제곱 밀리미터\n", lego_volume);
+
+	// change moon volume from km to mm
+	moon_volume = moon_volume * 1000000;
+	blocks_you_need = moon_volume / lego_volume;
+
+	printf("\n레고로 달을 만들기 위해서는 ");
+	printf("%.2lf개의 블럭이 필요합니다.", blocks_you_need);
+	printf("\n");
+}
+
+void CHAP3_Q1(void) {
+	double a, b;
+	printf("지수 형식으로 입력하세요.\n");
+	a = get_floating("a를");
+	b = get_floating("b를");
+	printf("a*b의 값은 %le입니다.", a * b);
+	printf("\n");
+}
