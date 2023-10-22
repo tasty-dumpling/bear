@@ -2,6 +2,10 @@
 #include "project0326.h"
 #include "chapter2.h"
 #include "chapter3.h"
+#include "chapter4.h"
+#include "chapter5.h"
+#include "chapter6.h"
+#include "chapter8.h"
 
 void main(void) {
 //	CHAP2_Q1();
@@ -9,6 +13,7 @@ void main(void) {
 //	CHAP2_Q3();
 //	CHAP2_Q4();
 //	CHAP2_Q5();
+// 
 //	make_moon_with_lego();
 //	CHAP3_Q1();
 //	CHAP3_Q2();
@@ -22,4 +27,31 @@ void main(void) {
 //	CHAP3_Q10();
 //	CHAP3_Q11();
 //	CHAP3_Q12();
+// 
+//	CHAP4_Q1();
+//	CHAP4_Q6();
+//	CHAP4_Q7();
+//	CHAP4_Q8();
+//	CHAP4_Q9();
+//
+//	CHAP5_Q7();
+//	CHAP5_Q8();
+//	CHAP5_Q9();
+//	CHAP5_Q10();
+//	CHAP5_Q11();
+//	CHAP5_Q12();
+//
+//	CHAP6_Q11();
+//	CHAP6_Q12();
+//	CHAP6_Q13();
+//	CHAP6_Q14();
+//	CHAP6_Q15();
+//	CHAP6_Q16();
+//	CHAP6_Q17();
+//	CHAP6_Q18();
+//	CHAP6_Q19();
+	CHAP6_Q20();
+
+//	CHAP8_Q7();
+//	CHAP8_Q8();
 }
