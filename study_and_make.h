@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+#include <time.h>
 
 #define PI 3.14159265358979323846
 #define SIZE 3
@@ -32,6 +34,7 @@ void CHAP2_Q2(void);
 void CHAP2_Q3(void);
 void CHAP2_Q4(void);
 void CHAP2_Q5(void);
+
 void make_moon_with_lego(void);
 void CHAP3_Q1(void);
 void CHAP3_Q2(void);
@@ -45,3 +48,30 @@ void CHAP3_Q9(void);
 void CHAP3_Q10(void);
 void CHAP3_Q11(void);
 void CHAP3_Q12(void);
+
+void CHAP4_Q1(void);
+void CHAP4_Q6(void);
+void CHAP4_Q7(void);
+void CHAP4_Q8(void);
+void CHAP4_Q9(void);
+
+void CHAP5_Q7(void);
+void CHAP5_Q8(void);
+void CHAP5_Q9(void);
+void CHAP5_Q10(void);
+void CHAP5_Q11(void);
+void CHAP5_Q12(void);
+
+void CHAP6_Q11(void);
+void CHAP6_Q12(void);
+void CHAP6_Q13(void);
+void CHAP6_Q14(void);
+void CHAP6_Q15(void);
+void CHAP6_Q16(void);
+void CHAP6_Q17(void);
+void CHAP6_Q18(void);
+void CHAP6_Q19(void);
+void CHAP6_Q20(void);
+
+void CHAP8_Q7(void);
+void CHAP8_Q8(void);
