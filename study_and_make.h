@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <time.h>
+#include <math.h>
+#include <windows.h>
 
 #define PI 3.14159265358979323846
 #define SIZE 3
@@ -73,5 +75,21 @@ void CHAP6_Q18(void);
 void CHAP6_Q19(void);
 void CHAP6_Q20(void);
 
+void CHAP7_Q7(void);
+void CHAP7_Q8(void);
+void CHAP7_Q9(void);
+void CHAP7_Q10(void);
+void CHAP7_Q11(void);
+
 void CHAP8_Q7(void);
 void CHAP8_Q8(void);
+
+void get(double value, int* i_part, double* f_part);
+void CHAP9_Q6(void);
+void find_Min_Max(const int* arr, int size, int* max, int* min);
+void CHAP9_Q8(void);
+
+void CHAP10_Q2(void);
+void getLine(char* buffer, size_t size);
+void upperLine(char* pointer, size_t size);
+void CHAP10_Q3(void);
