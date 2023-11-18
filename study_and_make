@@ -54,4 +54,10 @@ void main(void) {
 
 //	CHAP8_Q7();
 //	CHAP8_Q8();
+
+//	CHAP9_Q6();
+//	CHAP9_Q8();
+// 
+//	CHAP10_Q2();
+//	CHAP10_Q3();
 }
